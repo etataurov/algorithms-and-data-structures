@@ -10,17 +10,51 @@
 #define __priorityqueue__pqueue__
 
 #include <iostream>
+#include "Node.h"
+#include "Heap.h"
+
+template <typename ValueType>
 class PriorityQueue
 {
 public:
-    PriorityQueue();
+    ~PriorityQueue();
     void clear();
-    std::string dequeue();
-    void enque(std::string, int);
-    std::string peek();
+    ValueType dequeue();
+    void enqueue(ValueType, int);
+    ValueType peek();
     std::string toString();
 private:
-    int* tree;
+    Heap<ValueType> heap;
 };
+
+template <typename ValueType>
+void PriorityQueue<ValueType>::enqueue(ValueType value, int priority){
+    heap.insert(new Node<ValueType>(value, priority));
+}
+
+template <typename ValueType>
+PriorityQueue<ValueType>::~PriorityQueue(){
+    clear();
+}
+
+template <typename ValueType>
+void PriorityQueue<ValueType>::clear(){
+    heap.clear();
+}
+
+template <typename ValueType>
+ValueType PriorityQueue<ValueType>::dequeue(){
+    return heap.peek()->value;
+}
+
+template <typename ValueType>
+ValueType PriorityQueue<ValueType>::peek(){
+    return heap.max()->value;
+}
+
+template <typename ValueType>
+std::string PriorityQueue<ValueType>::toString(){
+    return heap.toString();
+}
 
 #endif /* defined(__priorityqueue__pqueue__) */

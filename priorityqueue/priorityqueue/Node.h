@@ -12,11 +12,24 @@
 #include <iostream>
 using namespace std;
 
+template <typename ValueType>
 struct Node {
-    Node(string, int);
+    Node(ValueType, int);
     Node();
-    string value;
+    ValueType value;
     int priority;
 };
+
+template <typename ValueType>
+Node<ValueType>::Node(ValueType value, int priority){
+    this->value = value;
+    this->priority = priority;
+}
+
+template <typename ValueType>
+Node<ValueType>::Node(){
+    this->value = NULL;
+    this->priority = NULL;
+}
 
 #endif /* defined(__priorityqueue__Node__) */

@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E652FBF21869EBE200056685 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E652FBF11869EBE200056685 /* main.cpp */; };
-		E652FBFC1869EC8D00056685 /* pqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E652FBFA1869EC8D00056685 /* pqueue.cpp */; };
-		E652FBFF1869F8FF00056685 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E652FBFD1869F8FF00056685 /* Heap.cpp */; };
-		E652FC021869FAB900056685 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E652FC001869FAB900056685 /* Node.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,11 +25,8 @@
 /* Begin PBXFileReference section */
 		E652FBEE1869EBE200056685 /* priorityqueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = priorityqueue; sourceTree = BUILT_PRODUCTS_DIR; };
 		E652FBF11869EBE200056685 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		E652FBFA1869EC8D00056685 /* pqueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pqueue.cpp; sourceTree = "<group>"; };
 		E652FBFB1869EC8D00056685 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
-		E652FBFD1869F8FF00056685 /* Heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Heap.cpp; sourceTree = "<group>"; };
 		E652FBFE1869F8FF00056685 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
-		E652FC001869FAB900056685 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
 		E652FC011869FAB900056685 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,10 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E652FBF11869EBE200056685 /* main.cpp */,
-				E652FBFA1869EC8D00056685 /* pqueue.cpp */,
-				E652FBFD1869F8FF00056685 /* Heap.cpp */,
 				E652FBFE1869F8FF00056685 /* Heap.h */,
-				E652FC001869FAB900056685 /* Node.cpp */,
 				E652FC011869FAB900056685 /* Node.h */,
 				E652FBFB1869EC8D00056685 /* pqueue.h */,
 			);
@@ -128,10 +119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E652FBFF1869F8FF00056685 /* Heap.cpp in Sources */,
-				E652FBFC1869EC8D00056685 /* pqueue.cpp in Sources */,
 				E652FBF21869EBE200056685 /* main.cpp in Sources */,
-				E652FC021869FAB900056685 /* Node.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

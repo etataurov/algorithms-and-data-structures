@@ -9,19 +9,18 @@
 #include <iostream>
 #include "pqueue.h"
 #include "Node.h"
-#include "Heap.h"
 using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    Heap* heap = new Heap();
-    heap->insert(new Node("AKAKA", 10));
-    heap->insert(new Node("alog", 2));
-    heap->insert(new Node("ALLAA", 4));
-    cout << heap->toString() << endl;
-    cout << heap->peek()->value << endl;
-    cout << heap->toString() << endl;
-    cout << "Hello, World!\n";
+    PriorityQueue<string>* queue = new PriorityQueue<string>;
+    queue->enqueue("Ten", 10);
+    queue->enqueue("Two", 2);
+    queue->enqueue("Four", 4);
+    cout << queue->toString() << endl;
+    cout << queue->dequeue() << endl;
+    cout << queue->toString() << endl;
+    delete queue;
     return 0;
 }
 
